@@ -1,6 +1,6 @@
 import './App.css'
 import waste2 from './images/waste2.svg'
-import recycle from './images/recycle.png'
+import recycle from './images/recycle.svg'
 
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
         <div className='container'>
           <h1 className='title'> waste and recycling</h1>
           <p className='title-notes'>Веб-сайти, мобільні застосунки, UX / UI дизайн, логотипи та брендінг, SMM.</p>
-          <img className='title-img' src={recycle}></img>
+          <a className='title-img'href=''></a>
         </div>
       </main>
       <footer className='footer'>

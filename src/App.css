@@ -70,7 +70,7 @@ body {
 .title::before {
     content: "";
     background: rgba(141, 64, 234, 0.9);
-    height: 1000px;
+    height: 700px;
     width: 670px;
     position: absolute;
     filter: blur(300px);
@@ -81,12 +81,30 @@ body {
     padding: 10px;
     margin: 10px;
     height: 200px;
+    
 
 }
 
 .title-img {
-    background-color: rgb(255, 240, 254);
-    width: 150px;
-    margin-top: 10px;
-    position: relative;
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color:  rgba(172, 111, 245, 0.75);
+    border: 15px solid  rgba(172, 111, 245, 0.5);
+    outline: 15px solid  rgba(172, 111, 245, 0.25);
+    margin: 0 auto;
+
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-img::before {
+    content: '';
+    background-image: url();
+    position: absolute;
+    min-width: 50px;
+    height: 50px;
+    
 }
