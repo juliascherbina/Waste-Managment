@@ -10,6 +10,10 @@ body {
     font-size: 18px;
     color: white;
     background-color: rgba(1, 2, 10, 1);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
 }
 
 .container {
@@ -38,13 +42,18 @@ body {
     border-radius: 5%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-
+ul {
+    margin-block-start: none;
+    margin-block-end: none;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px
+}
 .menu {
     display: flex;
     gap: 30px;
     list-style-type: none;
-    position: absolute;
-    left: 1000px;
+   
 }
 
 .logo {
@@ -146,11 +155,13 @@ body {
 /*Services styles down */
 .services {
     position: relative;
+    text-align: center;
+    line-height: 1;
 }
 .services::before{
     opacity: 0.65;
     top: 100px;
-    width: 1300px;
+   
 }
 
 .services-title {
