@@ -537,32 +537,32 @@ ul {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 10px;
     border-radius: 15px;
+    letter-spacing: 2px;
 
 }
 
 label {
     margin-top: 30px;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(127, 255, 212, 0.278);
 }
 
 label,
 input {
     width: 500px;
     border-radius: 15px;
+    padding-left: 5px;
+
+    
 }
 
-.connect input {
+#fname, #lname,#email{
     height: 70px;
     margin: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    
-    border: 2px solid  rgb(255, 255, 255, 0.5);
-
-}
-#fname{
-    border: none;
-    background-color:rgba(255, 255, 255, 0.1) ;
-    padding: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid rgba(127, 255, 212, 0.278) ;
+    color:  rgba(127, 255, 212, 0.278) ;
+    padding-left: 25px;
+    margin-left: 5px;
 }
 
 .connect button {
