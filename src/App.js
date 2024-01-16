@@ -4,6 +4,8 @@ import { Header } from './Components/Header/Header';
 import { Main } from './Components/Main/Main';
 import agency from './images/agency.jpg'
 import photo from './images/woman.png'
+import right from './images/icon-right.svg'
+import left from './images/icon-left.svg'
 
 function App() {
   return <>
@@ -93,9 +95,9 @@ function App() {
               <span className='feedback-span'>Sale manager</span>
               <p className='feedback-text'>Команда фахівців виявилася професійною та креативною,
                 їхній підхід був індивідуальним та спрямованим на досягнення наших бізнес-цілей.</p>            </div>
-            <button className='left-arrow'>left-arrow</button>
-            <button className='right-arrow'>right-arrow</button>
-            <button className='point-btn'>. more more more</button>
+            <button className='left-arrow'><img src={left}></img></button>
+            <button className='right-arrow'><img src={right}></img></button>
+            <button className='point-btn'></button>
           </div>
         </div>
       </section>
@@ -103,13 +105,13 @@ function App() {
         <h1 className='connect-header'> Connect with us</h1>
         <form className='connect-form'>
           <label for='fname'>First name:</label>
-          <input type='text' id='fname' name='fname'></input>
+          <input type='text' id='fname' name='fname' value='enter your name'></input>
 
           <label for='lname'>Last name:</label>
-          <input type='text' id='lname' name='lname'></input>
+          <input type='text' id='lname' name='lname' value='enter your last name'></input>
 
           <label for='email'>Email</label>
-          <input type='text' id='email' name='email'></input>
+          <input type='text' id='email' name='email' value='enter your email' ></input>
           <button>Want to connect</button>
         </form>
       </section>
