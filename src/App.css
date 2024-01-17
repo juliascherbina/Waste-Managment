@@ -359,7 +359,8 @@ ul {
 
 .work-list-item {
     border-radius: 15px;
-    background-color: rgba(85, 53, 125, 0.635);
+    background-color: rgba(58, 24, 98, 0.75);
+
     ;
     overflow: hidden;
     display: flex;
@@ -369,7 +370,7 @@ ul {
 }
 
 .work-list-item:hover {
-    box-shadow: 0 0 25px 0 rgba(121, 68, 169, 0.939);
+    box-shadow: 0 0 25px 0 rgba(172, 111, 245, 0.75);
 }
 
 .work-img {
@@ -400,6 +401,12 @@ ul {
     line-height: 1;
     background-color: rgba(141, 93, 200, 0.745);
     border: none;
+    cursor: pointer;
+}
+
+.work-btn:hover {
+    box-shadow: 0 0 25px 0 rgba(172, 111, 245, 0.75);
+    transition: 0.5s;
 }
 
 
@@ -418,6 +425,7 @@ ul {
 
 .feedback-item {
     display: flex;
+    
     width: 480px;
     height: 320px;
     flex-direction: column;
@@ -489,7 +497,13 @@ ul {
     background-color: rgba(141, 93, 200, 0.745);
     border-radius: 50%;
     border: none;
+    cursor: pointer;
 }
+
+/* .point-btn:hover{
+    box-shadow: 0 0 25px 0 rgba(172, 111, 245, 0.75);
+    transition: 0.5s;
+} */
 
 .point-btn::before {
     content: '';
@@ -523,7 +537,7 @@ ul {
 }
 
 .connect-header {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -531,10 +545,11 @@ ul {
     height: 594px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
     align-items: center;
     gap: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(58, 24, 98, 0.75);
     padding: 10px;
     border-radius: 15px;
     letter-spacing: 2px;
@@ -543,7 +558,7 @@ ul {
 
 label {
     margin-top: 30px;
-    color: rgba(127, 255, 212, 0.278);
+    color: rgba(232, 127, 255, 0.635);
 }
 
 label,
@@ -552,15 +567,17 @@ input {
     border-radius: 15px;
     padding-left: 5px;
 
-    
+
 }
 
-#fname, #lname,#email{
+#fname,
+#lname,
+#email {
     height: 70px;
     margin: 10px;
     background-color: rgba(255, 255, 255, 0);
-    border: 2px solid rgba(127, 255, 212, 0.278) ;
-    color:  rgba(127, 255, 212, 0.278) ;
+    border: 2px solid rgba(232, 127, 255, 0.635);
+    color: rgba(232, 127, 255, 0.635);
     padding-left: 25px;
     margin-left: 5px;
 }
@@ -574,4 +591,11 @@ input {
     border: none;
     padding: 0;
     background-color: rgba(141, 93, 200, 0.745);
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.connect button:hover {
+    box-shadow: 0 0 25px 0 rgba(172, 111, 245, 0.75);
+    transition: 0.5s;
 }
