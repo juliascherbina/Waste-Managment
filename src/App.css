@@ -41,6 +41,7 @@ body {
     width: 197px;
     border-radius: 5%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 20px;
 }
 
 ul {
@@ -59,9 +60,7 @@ ul {
 
 }
 
-.logo {
-    background-color: white;
-}
+
 
 .menu-item,
 .projects-item {

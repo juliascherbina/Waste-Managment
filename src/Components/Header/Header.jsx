@@ -1,6 +1,6 @@
 import React from "react";
 import '../../App.css'
-import waste2 from '../../images/waste2.svg'
+import waste2 from '../../images/trash.png'
 
 
 
