@@ -7,7 +7,7 @@ import React from "react";
 
 export const Connect=()=>{
     return <>
-     <section className='connect'>
+     <section className='connect' id="connect">
         <h1 className='connect-header'> Connect with us</h1>
         <form className='connect-form'>
           <label for='fname'>First name:</label>

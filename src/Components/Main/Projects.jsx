@@ -7,7 +7,7 @@ import agency from '../../images/agency.jpg'
 
 export const Projects=()=>{
     return<>
-     <section className='projects'>
+     <section className='projects' id="projects">
         <div className='container'>
           <h1 className='projects-header'>Our Projects</h1>
           <div className='projects-list'>

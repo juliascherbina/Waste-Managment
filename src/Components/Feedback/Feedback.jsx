@@ -7,7 +7,7 @@ import left from '../../images/icon-left.svg'
 
 export const Feedback=()=>{
     return <>
-     <section className='feedback'>
+     <section className='feedback' id="feedback">
         <div className='container'>
           <h1 className='feedback-header'>customer feedback</h1>
           <div className='feedback-items'>

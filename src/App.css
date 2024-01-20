@@ -59,7 +59,10 @@ ul {
 
 
 }
-
+.menu-link{
+text-decoration: none;
+color: white;
+}
 
 
 .menu-item,
@@ -162,11 +165,12 @@ ul {
 /*Footer styles bottom */
 .about {
     margin-bottom: 120px;
-    margin-top: 120px;
+    margin-top: 320px;
+    height: 600px;
+    line-height: 1.5;
 }
 
 .about-title {
-    line-height: 1, 3;
     margin-bottom: 70px;
 
 }
@@ -597,4 +601,19 @@ input {
 .connect button:hover {
     box-shadow: 0 0 25px 0 rgba(172, 111, 245, 0.75);
     transition: 0.5s;
+}
+.modal-content{
+width: 100%;
+height: 100%;
+display: inline;
+  background-color: antiquewhite;
+}
+.modal {
+    background-color: rgba(58, 24, 98, 1);
+    box-shadow: 0 0 25px 0 rgba(172, 111, 245, 0.75);
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    align-items: center;
+    z-index: 1;
 }

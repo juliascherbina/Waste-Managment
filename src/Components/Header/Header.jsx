@@ -9,25 +9,25 @@ import waste2 from '../../images/trash.png'
 
 export const Header=()=>{
     return <>
-      <header className='header'>
+      <header className='header' id="header">
         <div className='container'>
           <nav className='header-nav'>
               <img className='logo' src={waste2}></img>
               <ul className='menu'>
                 <li className='menu-item'>
-                  <a className='menu-link'>About us</a>
+                  <a href="#about" className='menu-link'>About us</a>
                 </li>
                 <li className='menu-item'>
-                  <a className='menu-link'>Services</a>
+                  <a href="#services" className='menu-link'>Services</a>
                 </li>
                 <li className='menu-item'>
-                  <a className='menu-link'>Projects</a>
+                  <a href="#projects" className='menu-link'>Projects</a>
                 </li>
                 <li className='menu-item'>
-                  <a className='menu-link'>Reviews</a>
+                  <a href="#feedback" className='menu-link'>Reviews</a>
                 </li>
                 <li className='menu-item'>
-                  <a className='menu-link'>Contacts</a>
+                  <a href="#connect" className='menu-link'>Contacts</a>
                 </li>
               </ul>
             
