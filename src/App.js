@@ -12,7 +12,6 @@ function App() {
     <div className='wrapper'>
       <Header />
       <Main />
-      <Projects />
       <Feedback />
       <Connect />
       <Footer />
