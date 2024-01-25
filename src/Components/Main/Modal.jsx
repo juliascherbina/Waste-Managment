@@ -1,16 +1,31 @@
-import React from "react";
 import '../../App.css'
+import React, { useEffect, useRef, useState } from "react";
 
 
 
 
-
-export const Modal = () => {
+export const Modal = ({ close, text }) => {
+    const modalRef = useRef()
+    useEffect(() => {
+        const handler = (event) => {
+            if (!modalRef.current) {
+                return;
+            }
+            if (!modalRef.current.contains(event.target)) {
+                close();
+            }
+        };
+        document.addEventListener("click", handler, true);
+        return () => {
+            document.removeEventListener("click", handler);
+        };
+    }, [])
     return <div className="modalBackground">
-        <div className="modal-content">
+        <div className="modal-content" ref={modalRef}>
             <div className="modal">
-                <p>This is the recommended router for all React Router web projects. It uses the DOM History API to update the URL and manage the history stack.
-                    It also enables the v6.4 data APIs like loaders, actions, fetchers and more.</p></div>
+                <p>{text}</p>
+            </div>
+            <button className="modalBtn-close" onClick={() => close()}>x</button>
         </div>
     </div>
 }
