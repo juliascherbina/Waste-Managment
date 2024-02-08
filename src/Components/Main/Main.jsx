@@ -20,7 +20,7 @@ export const Main = () => {
             <div className='container'>
                <About />
                <Services/>
-               <Projects/>
+               <Projects />
             </div>
         </main>
     </>

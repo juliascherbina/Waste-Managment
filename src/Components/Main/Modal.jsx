@@ -22,10 +22,11 @@ export const Modal = ({ close, text }) => {
     }, [])
     return <div className="modalBackground">
         <div className="modal-content" ref={modalRef}>
+        <button className="modalBtn-close" onClick={() => close()}>x</button>
             <div className="modal">
                 <p>{text}</p>
             </div>
-            <button className="modalBtn-close" onClick={() => close()}>x</button>
+         
         </div>
     </div>
 }
