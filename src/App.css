@@ -430,20 +430,21 @@ ul {
 
 .feedback-item {
     display: flex;
-
-    width: 480px;
+    width: 300px;
     height: 320px;
     flex-direction: column;
     justify-content: center;
-    margin: 70px;
+    margin: 0 auto;
+    padding: 40px;
 }
 
 .feedback-img {
-    width: 90px;
+    width: 100px;
     height: 90px;
     margin: 30px;
     position: relative;
     top: 100px;
+    right: 100px;
 }
 
 .feedback-name {

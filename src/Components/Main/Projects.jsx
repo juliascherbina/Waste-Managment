@@ -13,16 +13,51 @@ import agency6 from '../../images/agency6.jpg'
 
 export const Projects = () => {
 
-  const [filterProjects, setFilterProjects] = useState({
-    item1: 'All works',
-    item2: 'Our brends',
-    item3: 'Our Apps'
-  })
-function projectFilter(id){
-if(filterProjects.item1==true){
-  
-}
-}
+
+  const [works, useworks] = useState([
+    {
+      img: agency,
+      title: 'Words and Ideas for World Earth Day',
+      text: 'Conserve natural resources: Recycling reduces the need to extract resources such as timber, water, and minerals for new products.',
+      type: 'OurBrand'
+    },
+    {
+      img: agency2,
+      title: 'Words and Ideas for World Earth Day',
+      text: 'Conserve natural resources: Recycling reduces the need to extract resources such as timber, water, and minerals for new products.',
+      type: 'OurApp'
+    },
+    {
+      img: agency3,
+      title: 'Words and Ideas for World Earth Day',
+      text: 'Conserve natural resources: Recycling reduces the need to extract resources such as timber, water, and minerals for new products.',
+      type: 'OurApp'
+
+    },
+    {
+      img: agency4,
+      title: 'Words and Ideas for World Earth Day',
+      text: 'Conserve natural resources: Recycling reduces the need to extract resources such as timber, water, and minerals for new products.',
+      type: 'OurBrand'
+    },
+    {
+      img: agency5,
+      title: 'Words and Ideas for World Earth Day',
+      text: 'Conserve natural resources: Recycling reduces the need to extract resources such as timber, water, and minerals for new products.',
+      type: 'OurBrand'
+    },
+    {
+      img: agency6,
+      title: 'Words and Ideas for World Earth Day',
+      text: 'Conserve natural resources: Recycling reduces the need to extract resources such as timber, water, and minerals for new products.',
+      type: 'OurApp'
+    },
+  ])
+  const [workType, setWorkType] = useState('')
+  const [showMore, setShowMore] = useState(false)
+  function toggleShowMore() {
+    setShowMore(!showMore)
+  }
   return <>
     <section className='projects' id="projects">
       <div className='container'>
@@ -30,51 +65,33 @@ if(filterProjects.item1==true){
         <div className='projects-list'>
           <ul className='projects-items'>
             <li className='projects-item'>
-              <a onClick={()=>{}}>{filterProjects.item1}</a>
+              <a onClick={() => { setWorkType('') }}>All works</a>
             </li>
             <li className='projects-item'>
-              <a href=''>{filterProjects.item2}</a>
+              <a onClick={() => { setWorkType('OurBrand') }}>Our brends</a>
             </li>
             <li className='projects-item'>
-              <a href=''>{filterProjects.item3}</a>
+              <a onClick={() => { setWorkType('OurApp') }}>Our Apps</a>
             </li>
           </ul>
         </div>
         <div className='works-list' >
           <ul className='work-list-items'>
-            <li className='work-list-item' id="brands">
-              <img src={agency} className='work-img'></img>
-              <h3 className='work-heder'>Words and Ideas for World Earth Day</h3>
-              <p className='work-title'>Conserve natural resources: Recycling reduces the need to extract resources such as timber, water, and minerals for new products.</p>
-            </li>
-            <li className='work-list-item' id="apps">
-              <img src={agency2} className='work-img'></img>
-              <h3 className='work-heder'>Recycling Basics and Benefits</h3>
-              <p className='work-title'>Recycling is the process of collecting and processing materials that would otherwise be thrown away as trash and turning them into new products.</p>
-            </li>
-            <li className='work-list-item' id="apps">
-              <img src={agency3} className='work-img'></img>
-              <h3 className='work-heder'>Climate change</h3>
-              <p className='work-title'>According to the most recent EPA data, the recycling and composting of municipal solid waste (MSW or trash) saved over 193 million metric tons of carbon dioxide equivalent in 2018. </p>
-            </li>
-            <li className='work-list-item' id="brands">
-              <img src={agency4} className='work-img'></img>
-              <h3 className='work-heder'>Energy savings</h3>
-              <p className='work-title'>Recycling conserves energy. For example, recycling just 10 plastic bottles saves enough energy to power a laptop for more than 25 hours.</p>
-            </li>
-            <li className='work-list-item' id="brands">
-              <img src={agency5} className='work-img'></img>
-              <h3 className='work-heder'>Waste and pollution reduction</h3>
-              <p className='work-title'>Recycling diverts waste away from landfills and incinerators, which reduces the harmful effects of pollution and emissions. </p>
-            </li>
-            <li className='work-list-item' id="apps">
-              <img src={agency6} className='work-img'></img>
-              <h3 className='work-heder'>Environment</h3>
-              <p className='work-title'>Recycling provides many benefits to our environment</p>
-            </li>
+
+
+            {works
+              .filter((work) => workType == work.type || workType == '')
+              .slice(0, showMore ? 100 : 3)
+              .map((work) => {
+                return <li className='work-list-item' id="apps">
+                  <img src={work.img} className='work-img'></img>
+                  <h3 className='work-heder'>{work.title}</h3>
+                  <p className='work-title'>{work.text}</p>
+                </li>
+              })}
           </ul>
         </div>
-        <button className='work-btn'> Show more...</button>
+        <button className='work-btn' onClick={() => toggleShowMore(true)}> Show more...</button>
       </div>
     </section>
   </>
