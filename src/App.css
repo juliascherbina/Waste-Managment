@@ -575,7 +575,10 @@ input {
 
 
 }
+::placeholder{
+    color: rgba(232, 127, 255, 0.635);
 
+}
 #fname,
 #lname,
 #email {
