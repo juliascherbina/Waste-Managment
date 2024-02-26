@@ -25,6 +25,10 @@ body {
 
 }
 
+.burger {
+    display: none;
+}
+
 .header {
     padding: 15px 0;
 
@@ -59,6 +63,10 @@ ul {
 
 
 }
+.menu-open {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;}
 
 .menu-link {
     text-decoration: none;
@@ -575,10 +583,12 @@ input {
 
 
 }
-::placeholder{
+
+::placeholder {
     color: rgba(232, 127, 255, 0.635);
 
 }
+
 #fname,
 #lname,
 #email {
@@ -660,3 +670,66 @@ input {
     cursor: pointer;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+@media(max-width:1200px) {}
+
+@media(max-width:992px) {
+    .burger {
+        display: block;
+        width: 40px;
+        height: 20px;
+        top: 200px;
+        z-index: 1;
+        margin: 30px;
+        background-color: rgb(94, 10, 111);
+        position: absolute;
+        border: none;
+        cursor: pointer;
+        border-radius: 10%;
+    }
+
+    .menu {
+        position: absolute;
+        top: 200px;
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        display: none;
+
+    }
+
+    header {
+        line-height: 1.5;
+        height: 500px;
+    }
+
+    .menu-open {
+        display: block;
+        position: absolute;
+        top: 200px;
+        margin: 20px;
+        padding: 20px;
+    }
+    .title{
+        font-size: 14px;
+    }
+    .title-notes {
+        font-size: 10px;
+    }
+    .title-img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media(max-width:768px) {}
+
+@media(max-width:576px) {}

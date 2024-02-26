@@ -10,6 +10,9 @@ export const Connect = () => {
   function saveValue(event) {
     setForm(event.target.value)
   }
+  function Notification(){
+  alert('You received form, we will connect you soon')
+  }
   return <>
     <section className='connect' id="connect">
       <h1 className='connect-header'> Connect with us</h1>
@@ -22,7 +25,7 @@ export const Connect = () => {
 
         <label for='email'>Email</label>
         <input type='text' id='email' name='email' placeholder='Enter your email' onChange={e => setForm(e.target.value)} ></input>
-        <button>Want to connect</button>
+        <button onClick={()=>Notification()}>Want to connect</button>
       </form>
     </section>
   </>
